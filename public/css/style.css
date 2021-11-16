@@ -1,0 +1,219 @@
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   color: #fff;
+   background: rgba(0,0,0,0.2) url("../imgs/lake-moraine-canada.jpg") no-repeat fixed;
+   background-position: center center;
+   background-size: cover;
+   z-index: -1;
+}
+
+.container {
+   width: 90%;
+   margin: auto;
+}
+
+main {
+   width: 100%;
+   min-height: 100vh;
+}
+
+header {
+   padding: .5rem 0;
+   background: rgba(0,0,0,0.6);
+   backdrop-filter: blur(5px);
+   flex-wrap: wrap;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   color: #0000ff;
+}
+
+.nav-links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   gap: 1rem;
+   flex-wrap: wrap;
+}
+
+.nav-links form > input {
+   font-size: 1em;
+   cursor: pointer;
+   border: none !important;
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.form-container {
+   width: 50%;
+   margin: auto;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.form-container h3 {
+   width: 100%;
+   color: #333;
+   padding: .5rem 0;
+   background: #fff;
+   text-align: center;
+}
+
+.form-container form {
+   width: 100%;
+   padding: 3rem;
+   background: transparent;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   border: 1px solid rgba(255,255,255,0.5);
+   background: rgba(255,255,255,0.1);
+   box-shadow: 25px, 25px 25px rgba(0,0,0,0.5);
+   backdrop-filter: blur(4px);
+}
+
+form input:nth-child(1), form input:nth-child(2) {
+   width: 100%;
+   border: none;
+   outline: none;
+   box-shadow: none;
+   background: transparent;
+   border-bottom: 1px solid #fff;
+   padding: .5rem 1rem;
+   color: #fff;
+}
+
+form input:nth-child(3) {
+   width: 100%;
+   color: #fff;
+   border: 1px solid #fff;
+   font-weight: 900;
+   background: transparent;
+   padding: .5rem 0;
+   margin-top: 2rem;
+   cursor: pointer;
+}
+
+.ok {
+   color: #008000;
+   width: 100%;
+   padding: 1rem;
+   background: #fff;
+   margin-bottom: 3rem;
+}
+
+.error {
+   color: #ff0000;
+   width: 100%;
+   padding: 1rem;
+   background: #fff;
+   margin-bottom: 3rem;
+}
+
+.listSection {
+   padding:  3rem;
+   background: rgba(0,0,0,0.2);
+   backdrop-filter: blur(5px);
+   border-radius: 1rem;
+   margin: 5rem 2rem;
+}
+
+.listSection > form {
+   width: 100%;
+   display: flex;
+   flex-direction: row !important;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap !important;
+   gap: 1rem;
+}
+
+.listSection > form input:nth-child(1) {
+   width: 70%;
+}
+
+.listSection > form input:nth-child(2) {
+   width: 20%;
+   border: 1px solid #fff;
+}
+
+table {
+   width: 95%;
+   margin: auto;
+   background: rgba(0,0,0,0.5);
+   backdrop-filter: blur(3.5px);
+   border: 1px solid #444;
+}
+
+tr, td {
+   padding: .6rem 0;
+   text-align: center;
+   border-bottom: 1px solid #444;
+}
+
+.btn-ok {
+   color: #008000;
+   padding: .5rem 1rem;
+   text-align: center;
+   border: 1px #008000 solid;
+}
+
+.btn-delete {
+   color: #ff0000;
+   padding: .5rem 1rem;
+   text-align: center;
+   border: 1px solid #ff0000;
+}
+
+.UsersIP {
+   margin-top: 6rem;
+}
+
+@media all and (max-width: 700px) {
+   
+   .container {
+      width: 95%;
+   }
+   
+   .form-container {
+      width: 100%;
+   }
+   
+   .listSection > form {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap !important;
+   }
+   
+   .listSection > form input:nth-child(1) {
+      width: 100%;
+   }
+   
+   .listSection > form input:nth-child(2) {
+      width: 100%;
+      margin-top: 1.5rem;
+   }
+
+}
